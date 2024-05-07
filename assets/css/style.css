@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-lightblue: #7FB2DC;
+    --color-dark-background: #060C14;
+    --color-nav-background: #030A13;
+    --color-red: #FF4820;
+    --color-a-hover-dark: #000000;
+    --color-lightred: #FF8A71;
+    --color-input-background: #042445;
+    --color-placeholder: #3A658F;
+    --color-header-background: #252C37;
+    --color-brightpurple: #AC8FFF;
+    --color-lightlightblue: #4DC8DD;
+    --color-footer-background: #052D56;
+    --color-darkgreen: #3dd6b2;
+}
+
+body {
+    background-color: grey;
+}
+
+form {
+    width: 25%;
+    margin: auto;
+    background-color: var(--color-lightlightblue);
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    padding: 2rem 0;
+    border: black 2px solid;
+    border-radius: 5px;
+}
+
+.formDiv {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+form label {
+    display: block;
+    text-align: center;
+}
+
+form input {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+form input:focus {
+    outline: none;
+}
+
+#optionSelected {
+    display: none;
+}
+
+form select {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 2.5rem;
+}
+
+form select:focus {
+    outline: none;
+}
+
+form button {
+    background-color: var(--color-darkgreen);
+    border: 1px solid var(--color-brightpurple);
+    border-radius: 5px;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    width: 40%;
+    margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.formValid {
+    border: 2px solid lightgreen;
+}
+
+.formValid:focus {
+    border: 2px solid lightgreen;
+}
+
+.formInvalid {
+    border: 2px solid red;
+}
+
+.formInvalid:focus {
+    border: 2px solid red;
+}
